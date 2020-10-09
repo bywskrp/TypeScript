@@ -50,4 +50,4 @@ const obj = {
 
 console.log(getProp(obj, 'a'))
 console.log(getProp(obj, 'b'))
-console.log(getProp(obj, 'c'))
+// console.log(getProp(obj, 'c'))
