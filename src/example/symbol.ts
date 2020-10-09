@@ -51,3 +51,10 @@ const obj = {
 console.log(getProp(obj, 'a'))
 console.log(getProp(obj, 'b'))
 // console.log(getProp(obj, 'c'))
+
+//  Array.prototype.slice.apply 
+function handleData () {
+  if (arguments.length === 1) return arguments[0]
+  else if (arguments.length === 2) return arguments[0]*arguments[1]
+  else return Array.prototype.slice.apply(arguments).join ('_')
+}
