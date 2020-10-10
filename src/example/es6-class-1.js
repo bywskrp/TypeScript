@@ -33,4 +33,44 @@
 // console.log(p1.hasOwnProperty('getPoint'));
 // console.log(p1.__proto__.hasOwnProperty('getPoint'));
 
+// var info = {
+//   _age: 18,
+
+//   set age (newValue) {
+//     console.log(`新设置的值为：${newValue}`);
+//     this._age = newValue
+//     return this._age
+//   },
+
+//   get age () {
+//     return this._age
+//   }
+// }
+
+// console.log(info.age)
+// info.age = 20
+// console.log(info.age)
+
+class Info {
+  constructor (age) {
+    this._age = age
+  }
+
+  set age (newValue) {
+    console.log(`新设置的值为：${newValue}`);
+    this._age = newValue
+    return this._age
+  }
+
+  get age () {
+    return this._age
+  }
+}
+
+const infos = new Info(18)
+infos.age = 25
+console.log(infos.age)
+
+
+
  
