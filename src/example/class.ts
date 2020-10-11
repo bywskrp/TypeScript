@@ -46,17 +46,12 @@ class A {
 // console.log(a1)
 
 class Parent {
-  private static age: number = 18
   public static getAge() {
     return Parent.age
   }
+  private static age: number = 18
   constructor () {}
 }
 const p = new Parent()
 // console.log(p.age);
 // console.log(Parent.age);
-
-
-
-
-
