@@ -5,7 +5,11 @@
     ],
     "jsRules": {},
     "rules": {
-        "max-classes-per-file": false
+        "max-classes-per-file": false,
+        "no-empty": false,
+        "member-ordering": [true, {"order": "statics-first"}],
+        "member-access": true,
+        "no-console": false
     },
     "rulesDirectory": []
 }
